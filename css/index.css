@@ -1,0 +1,13 @@
+#navbarBody{
+    background-color: #68A4A5;
+}
+
+.navButtons {
+    margin-left: auto;
+}
+
+.navItem {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #FFFFFF;
+}
