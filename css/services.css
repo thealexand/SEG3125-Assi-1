@@ -1,0 +1,92 @@
+#services-body{
+    background-color: #D9DAD9;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+img{
+    width: 330px;
+    height: 265px;
+}
+
+.book-service{
+    background-color: #4C8055;
+    border-color: #052419;
+    opacity: 1;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#all-services{
+    position: absolute;
+    top: 10em;
+    width: 100%;
+    height: 40.4em;
+}
+
+#services-top-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 20.2em;
+    margin-bottom: 1em;
+}
+
+#services-bottom-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 20.2em;
+}
+
+.service{
+    background-color: #6fc27e;
+    width: 40%;
+    top: 2em;
+    height: 18.2em;
+}
+
+.service-left{
+    margin-right: 1.5em;
+}
+
+.service-right{
+    margin-left: 1.5em;
+}
+
+#daycare-bunny{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -40px;
+}
+
+p{
+    color: white; 
+    font-size: 20px;
+}
+
+#daycare-description{
+    position: absolute;
+    width: 13%;
+    margin-left: 315px;
+    margin-top: -20px;
+    
+}
+
+.daycare-button{
+    position: absolute;
+    margin-top: 11em;
+    margin-left: 350px;
+}
+

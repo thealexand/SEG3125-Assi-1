@@ -28,7 +28,108 @@
         </div>
       </nav>
 
-    <h1>Book your appointment!</h1>
+      <h1>Book your appointment!</h1>
+
+      <div id="fullBody">
+
+        <form id="appointment-type">
+          <label for="appointment-type-select">Appointment Type</label><br>
+          <select name="appointment-names" id="appointment-type-select">
+            <option value="daycare">Daycare</option>
+            <option value="boarding">Boarding</option>
+            <option value="training">Training</option>
+            <option value="grooming">Grooming</option>
+          </select><br>
+
+          <input type="radio" id="one-app" name="app-recurrence" value="One">
+          <label for="one-app">I would like only one appointment</label><br>
+
+          <input type="radio" id="multi-app" name="app-recurrence" value="Multi">
+          <label for="multi-app">I would like recurring appointments</label><br>
+
+          <input type="submit" value="Submit" id="submit-button">
+        </form>
+
+
+        <div class="daycare">
+          <form id="daycare-app">
+
+            <p>Daycare Days</p>
+            <label for="monday-daycare">Monday</label>
+            <input type="checkbox" id="monday-daycare" name="dow-select" value="Monday">
+            <label for="tuesday-daycare">Tuesday</label>
+            <input type="checkbox" id="tuesday-daycare" name="dow-select" value="Tuesday">
+            <label for="wednesday-daycare">Wednesday</label>
+            <input type="checkbox" id="wednesday-daycare" name="dow-select" value="Wednesday">
+            <label for="thursday-daycare">Thursday</label>
+            <input type="checkbox" id="thursday-daycare" name="dow-select" value="Thursday">
+            <label for="friday-daycare">Friday</label>
+            <input type="checkbox" id="friday-daycare" name="dow-select" value="Friday">
+            <br>
+            
+            <label for="drop-off-time">Drop-off time</label>
+            <select name="drop-off-time" id="drop-off-time" class="drop-off">
+              <option value="7">7:00AM</option>
+              <option value="7.5">7:30AM</option>
+              <option value="8">8:00AM</option>
+              <option value="8.5">8:30AM</option>
+              <option value="9">9:00AM</option>
+              <option value="9.5">9:30AM</option>
+              <option value="10">10:00AM</option>
+              <option value="10.5">10:30AM</option>
+              <option value="11">11:00AM</option>
+              <option value="11.5">11:30AM</option>
+              <option value="12">12:00PM</option>
+              <option value="12.5">12:30PM</option>
+              <option value="13">1:00PM</option>
+              <option value="13.5">1:30PM</option>
+              <option value="14">2:00PM</option>
+              <option value="14.5">2:30PM</option>
+              <option value="15">3:00PM</option>
+              <option value="15.5">3:30PM</option>
+              <option value="16">4:00PM</option>
+              <option value="16.5">4:30PM</option>
+              <option value="17">5:00PM</option>
+              <option value="17.5">5:30PM</option>
+              <option value="18">6:00PM</option>
+            </select>
+
+            <label for="pick-up-time">Pick-up time</label>
+            <select name="pick-up-time" id="pick-up-time" class="drop-off">
+              <option value="8">8:00AM</option>
+              <option value="8.5">8:30AM</option>
+              <option value="9">9:00AM</option>
+              <option value="9.5">9:30AM</option>
+              <option value="10">10:00AM</option>
+              <option value="10.5">10:30AM</option>
+              <option value="11">11:00AM</option>
+              <option value="11.5">11:30AM</option>
+              <option value="12">12:00PM</option>
+              <option value="12.5">12:30PM</option>
+              <option value="13">1:00PM</option>
+              <option value="13.5">1:30PM</option>
+              <option value="14">2:00PM</option>
+              <option value="14.5">2:30PM</option>
+              <option value="15">3:00PM</option>
+              <option value="15.5">3:30PM</option>
+              <option value="16">4:00PM</option>
+              <option value="16.5">4:30PM</option>
+              <option value="17">5:00PM</option>
+              <option value="17.5">5:30PM</option>
+              <option value="18">6:00PM</option>
+              <option value="18.5">6:30PM</option>
+              <option value="19">7:00PM</option>
+            </select> <br>
+
+            <label for="app-start-date">Appointment Start Date</label>
+            <input type="date" id="app-start-date" name="app-start-date"><br>
+            <label for="app-end-date">Appointment End Date</label>
+            <input type="date" id="app-end-date" name="app-end-date">
+
+          </form>
+        </div>
+
+      </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
