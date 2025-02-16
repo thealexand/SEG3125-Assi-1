@@ -28,7 +28,62 @@
         </div>
       </nav>
 
-    <h1>Client Info</h1>
+    
+
+    <div id="info">
+      <form id="info">
+        <h1>Human's Info</h1>
+        <div id="name">
+          <div id="fname">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
+          </div>
+          <div id="lname">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
+          </div>
+        </div>
+
+        <div id="column-info">
+          <div id="phone">
+            <label for="phone-number">Phone Number</label>
+            <input type="text" id="phone-number" name="pnumber">
+          </div>
+          <div id="email">
+            <label for="email-address">Email Address</label>
+            <input type="text" id="email-address" name="email">
+          </div>
+        </div>
+
+        <label for="app-concerns">Any appointment concerns or special scheduling requests?</label><br>
+        <textarea id="app-concerns" name="app-concerns" rows="5" cols="100"></textarea>
+
+        <h1>Bunny's Info</h1>
+        <div id="column info">
+          <div id="name">
+            <label for="bname">Name</label>
+            <input type="text" id="bname" name="bname">
+          </div>
+          <div id="age">
+            <label for="bage">Age</label>
+            <input type="text" id="bage" name="bage">
+          </div>
+          <div id="gender">
+            <label for="bgender">Gender</label>
+            <input type="text" id="bgender" name="bgender">
+          </div>
+        </div>
+
+        <input type="radio" id="food-preference" name="food-preference" value="Yes">
+          <label for="food-preference">My bunny can eat regular pellets</label><br>
+
+          <input type="radio" id="food-preference" name="food-preference" value="No">
+          <label for="food-preference">I would like recurring appointments</label><br>
+        
+      </form>
+      
+    </div>
+
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

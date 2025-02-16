@@ -35,40 +35,46 @@
         <form id="appointment-type">
           <label for="appointment-type-select">Appointment Type</label><br>
           <select name="appointment-names" id="appointment-type-select">
+            <option value="blank">-Please select-</option>
             <option value="daycare">Daycare</option>
             <option value="boarding">Boarding</option>
             <option value="training">Training</option>
             <option value="grooming">Grooming</option>
           </select><br>
 
+          <input type="submit" value="Submit" id="type-submit">
+        </form>
+
+        <form id="app-recurrence">
           <input type="radio" id="one-app" name="app-recurrence" value="One">
           <label for="one-app">I would like only one appointment</label><br>
 
           <input type="radio" id="multi-app" name="app-recurrence" value="Multi">
           <label for="multi-app">I would like recurring appointments</label><br>
 
-          <input type="submit" value="Submit" id="submit-button">
+          <input type="submit" value="Continue to appointment details" id="submit-button">
         </form>
 
 
-        <div class="daycare">
-          <form id="daycare-app">
+        <div class="second-half">
+          <form id="app-info">
 
             <p>Daycare Days</p>
-            <label for="monday-daycare">Monday</label>
-            <input type="checkbox" id="monday-daycare" name="dow-select" value="Monday">
-            <label for="tuesday-daycare">Tuesday</label>
-            <input type="checkbox" id="tuesday-daycare" name="dow-select" value="Tuesday">
-            <label for="wednesday-daycare">Wednesday</label>
-            <input type="checkbox" id="wednesday-daycare" name="dow-select" value="Wednesday">
-            <label for="thursday-daycare">Thursday</label>
-            <input type="checkbox" id="thursday-daycare" name="dow-select" value="Thursday">
-            <label for="friday-daycare">Friday</label>
-            <input type="checkbox" id="friday-daycare" name="dow-select" value="Friday">
+            <label for="monday">Monday</label>
+            <input type="checkbox" id="monday" name="dow-select" value="Monday">
+            <label for="tuesday">Tuesday</label>
+            <input type="checkbox" id="tuesday" name="dow-select" value="Tuesday">
+            <label for="wednesday">Wednesday</label>
+            <input type="checkbox" id="wednesday" name="dow-select" value="Wednesday">
+            <label for="thursday">Thursday</label>
+            <input type="checkbox" id="thursday" name="dow-select" value="Thursday">
+            <label for="friday">Friday</label>
+            <input type="checkbox" id="friday" name="dow-select" value="Friday">
             <br>
             
             <label for="drop-off-time">Drop-off time</label>
             <select name="drop-off-time" id="drop-off-time" class="drop-off">
+              <option value="blank">-Please select-</option>
               <option value="7">7:00AM</option>
               <option value="7.5">7:30AM</option>
               <option value="8">8:00AM</option>
@@ -96,6 +102,7 @@
 
             <label for="pick-up-time">Pick-up time</label>
             <select name="pick-up-time" id="pick-up-time" class="drop-off">
+              <option value="blank">-Please select-</option>
               <option value="8">8:00AM</option>
               <option value="8.5">8:30AM</option>
               <option value="9">9:00AM</option>
@@ -124,7 +131,11 @@
             <label for="app-start-date">Appointment Start Date</label>
             <input type="date" id="app-start-date" name="app-start-date"><br>
             <label for="app-end-date">Appointment End Date</label>
-            <input type="date" id="app-end-date" name="app-end-date">
+            <input type="date" id="app-end-date" name="app-end-date"><br>
+            <label for="app-date">Appointment Date</label>
+            <input type="date" id="app-date" name="app-date"><br>
+
+            <input formaction="clientInfo.html" type="submit" value="Continue to Info Page" id="continue-to-info">
 
           </form>
         </div>
