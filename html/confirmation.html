@@ -28,8 +28,62 @@
         </div>
       </nav>
 
-    <h1>Booking Confirmed!</h1>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div id="everything">
+      <img id="comfirmationBack" src="../imgs/confirmation bunny.jpg">
+      <div id="overall-content">
+        <div id="centerContent">
+          <h1>Booking Confirmed!</h1>
+        <h3>Thank you for choosing carrot lodge</h3>
+        <a class="btn btn-primary returnButton" href="../index.html">Return to Main Page</a>
+        </div>
+      </div>
+  
+      <div id="overallBottom">
+        <div id='bottom-info'>
+          <div id="title">
+            <h4></h4>
+          </div>
+          <div id="service-type"></div>
+          <div id="date"></div>
+          <div id="days"></div>
+          <div id="time"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      let serviceType = localStorage.getItem("appType");
+      let recurrence = localStorage.getItem("recurrence");
+      let days = localStorage.getItem("recurringDays");
+      let dropOff = localStorage.getItem("dropOff");
+      let pickUp = localStorage.getItem("pickUp");
+      let startDate = localStorage.getItem("startDate");
+      let endDate = localStorage.getItem("endDate");
+      let date = localStorage.getItem("date");
+
+      let string = "";
+      document.getElementById("service-type").innerHTML = string.concat("<p>", serviceType, "<p>");
+
+      if (startDate && endDate){
+        let string = "";
+        document.getElementById("date").innerHTML = string.concat("<p>", startDate, " to ", endDate, "<p>");
+      }
+      else if (date){
+        let string = "";
+        document.getElementById("date").innerHTML = string.concat("<p>", date, "<p>");
+      }
+
+      if (pickUp && dropOff){
+        let string = "";
+        document.getElementById("time").innerHTML = string.concat("<p>", dropOff, " - ", pickUp, "<p>");
+      }
+      
+      
+    </script>
+    
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

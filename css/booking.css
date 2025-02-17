@@ -6,3 +6,35 @@ label{
     margin-bottom:0.5em;
 }
 
+#pt2{
+    display:none;
+    /*display:block to show*/
+}
+
+#recurring-days{
+    display:none;
+}
+
+#drop-off-time-div{
+    display:none;
+}
+
+#pick-up-time-div{
+    display:none;
+}
+
+#start-date-div{
+    display:none;
+}
+
+#end-date-div{
+    display:none;
+}
+
+#date-div{
+    display:none;
+}
+
+#continue-to-info{
+    display:none;
+}
