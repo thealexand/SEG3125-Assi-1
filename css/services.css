@@ -38,7 +38,7 @@ img{
     align-items:center;
     width: 100%;
     height: 20.2em;
-    margin-bottom: 1em;
+    margin-bottom: 7em;
 }
 
 #services-bottom-row{
@@ -72,7 +72,7 @@ img{
 }
 
 p{
-    color: white; 
+    color: black; 
     font-size: 20px;
 }
 
@@ -80,13 +80,19 @@ p{
     position: absolute;
     width: 13%;
     margin-left: 315px;
-    margin-top: -20px;
+    margin-top: 9px;
     
 }
 
 .daycare-button{
     position: absolute;
-    margin-top: 11em;
+    margin-top: 14em;
     margin-left: 350px;
 }
 
+#daycare-title{
+    position: absolute;
+    margin-top: 8em;
+    width: 10em;
+    margin-left: 1em;
+}
