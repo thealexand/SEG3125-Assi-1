@@ -11,6 +11,17 @@
 
 <body>
 
+  <script>
+    /*console.log("AppType:", localStorage.getItem("appType"));
+    console.log("Recurrence:", localStorage.getItem("recurrence"));
+    console.log("Days:", localStorage.getItem("recurringDays"));
+    console.log("Drop off:", localStorage.getItem("dropOff"));
+    console.log("Pick Up:", localStorage.getItem("pickUp"));
+    console.log("Start:", localStorage.getItem("startDate"));
+    console.log("End:", localStorage.getItem("endDate"));
+    console.log("Date:", localStorage.getItem("date"));*/
+  </script>
+
     <nav class="navbar navbar-expand-lg navbar-light" id="navbarBody">
         <div id="logo">
           <a href="../index.html">
@@ -74,17 +85,29 @@
           </div>
         </div>
 
-        <input type="radio" id="food-preference" name="food-preference" value="Yes">
-          <label for="food-preference">My bunny can eat regular pellets</label><br>
+        <div id="food-preference-buttons">
 
-          <input type="radio" id="food-preference" name="food-preference" value="No">
-          <label for="food-preference">I would like recurring appointments</label><br>
+          <div class="food">
+            <input type="radio" id="food-preference" name="food-preference" value="Yes">
+            <label for="food-preference">My bunny can eat regular pellets</label><br>
+          </div>
+          <div class="food">
+            <input type="radio" id="food-preference" name="food-preference" value="No">
+            <label for="food-preference">I would like recurring appointments</label><br>
+          </div>
+        </div>
+        
+        <label for="add-info">Any additional info? (e.g. Usual eating time, social habits, fears, exercise/sleep needs, medical risks, etc.)</label><br>
+        <textarea id="add-info" name="add-info" rows="5" cols="100"></textarea>
+
+        <a btn class="btn btn-primary book-service go-back-btn" href="booking">Go Back</a>
+        <input formaction="confirmation.html" type="submit" value="Finish Booking" id="book-button">
         
       </form>
       
     </div>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
