@@ -38,3 +38,12 @@ label{
 #continue-to-info{
     display:none;
 }
+
+label{
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+input{
+    margin: 1em;
+}
